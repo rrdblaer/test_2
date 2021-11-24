@@ -109,12 +109,12 @@ def check_geography(string, tussenvoegsel = ";"):
         if string[i] == tussenvoegsel:
             geg.append(string[j:i])
             j = i + 1
-    if len(geg)<15:
+    if len(geg)<=0:
         return ""
     else:
-        acceptedname = geg[15]
+        acceptedname = geg[0]
         acceptedname = acceptedname.strip()
-        country = geg[23]
+        country = geg[1]
         if country == "Congo, Dem. Rep.":
             print(acceptedname)
             return acceptedname
