@@ -170,6 +170,13 @@ for i in new_Uit_DRC:
 print(echte_DRC)
 listWrite("DRC.txt", echte_DRC)
 
+smartwoodID_Lore = listRead("smartwoodID_lore.csv")
 
+fin_list_core_collection = list()
+for i in echte_DRC:
+    if not i in smartwoodID_Lore:
+        fin_list_core_collection.append(i)
+
+listWrite("finale lijst core collectie smartwoodID", fin_list_core_collection)
 
 
