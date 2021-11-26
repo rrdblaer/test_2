@@ -126,9 +126,9 @@ for i in onbreekt:
     onbreekt_nieuw.append(i.strip())
 
 output = list()
-for i in lijst:
-    for j in onbreekt_nieuw:
-        if j in i:
+for i in onbreekt_nieuw:
+    for j in lijst:
+        if i in j:
             output.append(get_names(i))
 new_output = list()
 for i in output:
