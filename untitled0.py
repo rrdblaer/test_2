@@ -129,7 +129,7 @@ output = list()
 for i in onbreekt_nieuw:
     for j in lijst:
         if i in j:
-            output.append(get_names(i))
+            output.append(get_names(j))
 new_output = list()
 for i in output:
     if i != "":
